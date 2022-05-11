@@ -207,7 +207,6 @@ namespace HomeWork
             //Console.ReadKey();
 
 
-<<<<<<< HEAD
 
             // .............................................................5 Урок
 
@@ -256,12 +255,270 @@ namespace HomeWork
 
             //if (years > 25)
             //{ Console.WriteLine($"Премия составляет 50% от заработной платы и равна {salary * 50 / 100} "); }
-=======
-            //new line
 
-            //another line
->>>>>>> c92110f1259f6077150e455e576341f8f9891096
+            //Console.ReadKey();
 
+
+
+            // .............................................................6 Урок
+
+            // 1 Задание
+
+            //            Используя Visual Studio, создайте проект по шаблону Console Application.  
+            //Дано два числа A и B(A<B) выведите суму всех чисел расположенных между данными числами на экран. 
+            //Дано два числа A и B(A<B) выведите все нечетные значения, расположенные между данными числами.
+
+
+            //Console.WriteLine("Ведите первое число: ");
+            //string operand1 = Console.ReadLine();
+            //int a = int.Parse(operand1);
+
+            //Console.WriteLine("Ведите второе число: ");
+            //string operand2 = Console.ReadLine();
+            //int b = int.Parse(operand2);
+
+            //int counter = a + 1;
+            //int summ = 0;
+
+            //if (a < b)
+            //{
+            //    while (counter > a && counter < b)
+            //    {
+            //        summ += counter;
+            //        counter++;
+            //    }
+            //    Console.WriteLine(summ);
+            //} else
+            //    Console.WriteLine("Первое число должно быть меньше второго!");
+            //Console.ReadKey();
+
+
+
+
+            //Console.WriteLine("Ведите первое число: ");
+            // string operand1 = Console.ReadLine();
+            // int a = int.Parse(operand1);
+
+            // Console.WriteLine("Ведите второе число: ");
+            // string operand2 = Console.ReadLine();
+            // int b = int.Parse(operand2);
+
+            // int counter = a;
+
+
+            // if (a < b)
+            // {
+            //     while (counter >= a && counter < b)
+            //     {
+            //         counter++;
+            //         if (counter %2 != 0 && counter < b && counter > a)
+            //             Console.Write(counter + " ");
+            //     }
+
+            // }
+            // else
+            //     Console.WriteLine("Первое число должно быть меньше второго!");
+            // Console.ReadKey();
+
+
+            // 2 Задание
+
+            //            Используя Visual Studio 2010, создайте проект по шаблону Console Application.  
+            //Используя циклы и метод: 
+            //Console.Write("*"), Console.Write(" "), Console.Write("\n")(для перехода на новую строку).
+
+
+            //Выведите на экран:
+            //· прямоугольник
+            //· прямоугольный треугольник  
+            //· равносторонний треугольник   
+            //· ромб
+
+
+            // ПРЯМОУГОЛЬНИК
+
+            // for (int counter = 0; counter < 6; counter++)
+            //{
+            //    Console.Write("*");
+            //}
+            //Console.WriteLine();
+            // for (int counter2 = 0; counter2 < 6; counter2++)
+            //{
+            //    Console.Write("*");
+            //}
+            //Console.WriteLine();
+            //for (int counter3 = 0; counter3 < 6; counter3++)
+            //{
+            //    Console.Write("*");
+            //}
+
+            // ПРЯМОУГОЛЬНЫЙ ТРЕУГОЛЬНИК
+
+            //for (int counter = 0; counter < 1; counter++)
+            //{
+            //    Console.Write("*");
+            //}
+            //Console.WriteLine();
+            //for (int counter2 = 0; counter2 < 4; counter2++)
+            //{
+            //    Console.Write("*");
+            //}
+            //Console.WriteLine();
+            //for (int counter3 = 0; counter3 < 8; counter3++)
+            //{
+            //    Console.Write("*");
+            //}
+            //Console.WriteLine();
+            //for (int counter4 = 0; counter4 < 12; counter4++)
+            //{
+            //    Console.Write("*");
+            //}
+            //Console.WriteLine();
+            //for (int counter5 = 0; counter5 < 16; counter5++)
+            //{
+            //    Console.Write("*");
+            //}
+
+
+            // РАВНОСТОРОННИЙ ТРЕУГОЛЬНИК
+
+            //for (int counter = 0; counter < 1; counter++)
+            //{
+            //    Console.Write("*");
+            //}
+            //Console.WriteLine();
+            //for (int counter2 = 0; counter2 < 2; counter2++)
+            //{
+            //    Console.Write("*");
+            //}
+            //Console.WriteLine();
+            //for (int counter3 = 0; counter3 < 4; counter3++)
+            //{
+            //    Console.Write("*");
+            //}
+
+            //    РОМБ
+
+
+            //for (int counter = 0; counter < 4; counter++)
+            //{
+            //    if (counter < 3)
+            //    {
+            //        Console.Write(" ");
+            //    } 
+            //    if (counter == 3)
+            //    {
+            //        Console.Write("*");
+            //    }
+
+            //}
+            //Console.WriteLine();
+
+            //for (int counter = 0; counter < 5; counter++)
+            //{
+            //    if (counter < 2)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    if (counter >= 2 && counter <= 4)
+            //    {
+            //        Console.Write("*");
+            //    }
+
+            //}
+            //Console.WriteLine();
+
+            //for (int counter = 0; counter < 7; counter++)
+            //{
+            //    if (counter < 1)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    if (counter >= 2 && counter <= 6)
+            //    {
+            //        Console.Write("*");
+            //    }
+
+            //}
+            //Console.WriteLine();
+
+            //for (int counter = 0; counter < 9; counter++)
+            //{
+            //    if (counter < 0)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    if (counter >= 2 && counter <= 8)
+            //    {
+            //        Console.Write("*");
+            //    }
+
+            //}
+            //Console.WriteLine();
+
+            //for (int counter = 0; counter < 7; counter++)
+            //{
+            //    if (counter < 1)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    if (counter >= 2 && counter <= 6)
+            //    {
+            //        Console.Write("*");
+            //    }
+
+            //}
+            //Console.WriteLine();
+
+            //for (int counter = 0; counter < 5; counter++)
+            //{
+            //    if (counter < 2)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    if (counter >= 2 && counter <= 4)
+            //    {
+            //        Console.Write("*");
+            //    }
+
+            //}
+            //Console.WriteLine();
+
+            //for (int counter = 0; counter < 4; counter++)
+            //{
+            //    if (counter < 3)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    if (counter == 3)
+            //    {
+            //        Console.Write("*");
+            //    }
+
+            //}
+            //Console.WriteLine();            
+
+            //Console.ReadKey ();
+
+
+            // задание 3
+
+            //            Имеется N клиентов, которым компания производитель должна доставить товар. Сколько существует возможных маршрутов доставки товара, с учетом того, что товар будет доставлять одна машина?
+            //Используя Visual Studio, создайте проект по шаблону Console Application.
+            //Напишите программу, которая будет рассчитывать, и выводить на экран количество возможных вариантов доставки товара. Для решения задачи, используйте факториал N!, рассчитываемый с помощью цикла do -while.
+
+            //Console.WriteLine("Введите число клиентов доставки: ");
+            //string a = Console.ReadLine();
+            //int clients = int.Parse(a);
+            //int factorial = 1;
+
+            //do
+            //{
+            //    factorial *= clients--;
+            //}
+            //while (clients > 0);
+
+            //Console.WriteLine(factorial + " вариантов доставки товара");
         }
     }
 }
