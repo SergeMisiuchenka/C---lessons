@@ -670,62 +670,188 @@ namespace HomeWork
         //}
 
         // 4 задание 
-//        Напишите метод, который будет определять:  
-//1) является ли введенное число положительным или отрицательным.
-//2) Является ли оно простым(используйте технику перебора значений).  
-//(Простое число — это натуральное число, которое делится на 1 и само на себя.Чтобы определить простое число или нет, следует найти все его целые делители. Если делителей больше 2-х, значит оно не простое.)
-//3) Делится ли на 2, 5, 3, 6, 9 без остатка.
+        //        Напишите метод, который будет определять:  
+        //1) является ли введенное число положительным или отрицательным.
+        //2) Является ли оно простым(используйте технику перебора значений).  
+        //(Простое число — это натуральное число, которое делится на 1 и само на себя.Чтобы определить простое число или нет, следует найти все его целые делители. Если делителей больше 2-х, значит оно не простое.)
+        //3) Делится ли на 2, 5, 3, 6, 9 без остатка.
 
-        static string PositiveNegative(double a)
-        {
-            if (a > 0)
-            {
-                return "Число является положительным";
-            }
-            else if (a < 0)
-            {
-                return "Число является отридцательным";
-            }
-            return "Число равно 0";
-        }
+        //static string PositiveNegative(double a)
+        //{
+        //    if (a > 0)
+        //    {
+        //        return "Число является положительным";
+        //    }
+        //    else if (a < 0)
+        //    {
+        //        return "Число является отридцательным";
+        //    }
+        //    return "Число равно 0";
+        //}
 
-        static string Div(double number)
-        {
-            if (number % 2 == 0 || number % 3 == 0 || number % 5 == 0 || number % 6 == 0 || number % 9 == 0)
-            {
-                return "Число делится на 2, 3, 5, 6, 9";
-            }
-            else
-                return "Число не делится на 2, 3, 5, 6, 9";
-        }
+        //static string Div(double number)
+        //{
+        //    if (number % 2 == 0 || number % 3 == 0 || number % 5 == 0 || number % 6 == 0 || number % 9 == 0)
+        //    {
+        //        return "Число делится на 2, 3, 5, 6, 9";
+        //    }
+        //    else
+        //        return "Число не делится на 2, 3, 5, 6, 9";
+        //}
 
-        static string SimpleDifficult (double number)
-        {
-            if (number < 2) return "Простые числа начинаются с числа 2, ваше число меньше числа 2!";
-            for (int i = 2; i <= Math.Sqrt(number); i++)
-            {
-                if (number % i == 0) return "Число сложное";
-            }
-            return "Число простое";
-        }
-        static void Main ()
-            {
-                Console.WriteLine("Введите число: ");
-                string input = Console.ReadLine();
-                double number = double.Parse(input);
+        //static string SimpleDifficult (double number)
+        //{
+        //    if (number < 2) return "Простые числа начинаются с числа 2, ваше число меньше числа 2!";
+        //    for (int i = 2; i <= Math.Sqrt(number); i++)
+        //    {
+        //        if (number % i == 0) return "Число сложное";
+        //    }
+        //    return "Число простое";
+        //}
+        //static void Main ()
+        //    {
+        //        Console.WriteLine("Введите число: ");
+        //        string input = Console.ReadLine();
+        //        double number = double.Parse(input);
 
-                string result;
-                result = PositiveNegative(number);
-                Console.WriteLine(result);
-                result = Div(number);
-                Console.WriteLine(result);
+        //        string result;
+        //        result = PositiveNegative(number);
+        //        Console.WriteLine(result);
+        //        result = Div(number);
+        //        Console.WriteLine(result);
 
-            result = SimpleDifficult(number);
-            Console.WriteLine(result);
+        //    result = SimpleDifficult(number);
+        //    Console.WriteLine(result);
 
-           
-            }
-        }
-    
+
+        //    }
+
+        // .............................................................8 Урок
+
+        // Задание 1 
+
+        //Создайте метод с именем Calculate, который принимает в качестве параметров три целочисленных значения и возвращает значение
+        //каждого аргумента деленного на 5.
+
+        //static double Calculate(int a, int b, int c)
+        //{
+        //    double result1 = (double)(a);
+        //    double result2 = (double)(b);
+        //    double result3 = (double)(c);
+
+        //    double operand1 = 0;
+        //    double operand2 = 0;
+        //    double operand3 = 0;
+
+        //    operand1 = result1 / 5;
+        //    operand2 = result2 / 5;
+        //    operand3 = result3 / 5;
+
+        //    double final = operand1 + operand2 + operand3;
+        //    return final;
+        //}
+
+        //static void Main()
+        //{
+        //    Console.WriteLine("Введите 3 целочисленных значения: ");
+
+        //    string a = Console.ReadLine();
+        //    int operand1 = int.Parse(a);
+
+        //    string b = Console.ReadLine();
+        //    int operand2 = int.Parse(b);
+
+        //    string c = Console.ReadLine();
+        //    int operand3 = int.Parse(c);
+
+        //    double result = 0;
+
+        //    result = Calculate(operand1, operand2, operand3);
+
+        //    Console.WriteLine(result);
+
+        //    Console.ReadKey();
+
+        //}
+
+        //  Задание 2
+
+        // Представьте, что вы реализуете программу для банка, которая помогает определить, погасил ли клиент кредит или нет. Допустим,
+        // ежемесячная сумма платежа должна составлять 100 грн. Клиент должен выполнить 7 платежей, но может платить реже большими суммами.
+        // Т.е., может двумя платежами по 300 и 400 грн. Закрыть весь долг.Создайте метод, который будет в качестве аргумента принимать
+        // сумму платежа, введенную экономистом банка.Метод выводит на экран информацию о состоянии кредита(сумма задолженности, сумма
+        // переплаты, сообщение об отсутствии долга).  
+
+        //static string InfoCredit(double payment, double paymentNumber)
+        //{
+        //    const double creditSumm = 700;
+        //    var message = string.Empty;
+        //    if (paymentNumber <= 7)
+        //    {
+        //         if (payment >= 100 && payment < creditSumm)
+        //                {
+        //                    message = ("Сумма задолжности равна: " + (creditSumm - payment));
+        //                } else if (payment == creditSumm)
+        //                {
+        //                    message = ("Кредит погашен и долг отсутствует!");
+        //                } else if (payment >= creditSumm)
+        //                {
+        //                    message = ("Кредит погашен и сумма переплаты равна :" + (payment - creditSumm));
+        //                } else if (payment < 100)
+        //        {
+        //            Console.WriteLine("Минимальный платеж в месяц составляет 100 у.е.");
+        //        }
+        //    } else 
+        //    {
+        //        message = ("Срок выплаты кредита истек");
+        //        Console.WriteLine("Сумма задолжности равна: " + (creditSumm - payment));
+        //    }
+        //    return message;
+        //}
+
+        //static void Main()
+        //{
+        //    bool isNumber = true;
+        //    double payment = 0;
+        //    double paymentNumber = 0;
+        //    do
+        //    {
+        //        Console.WriteLine("Введите сумму платежа: ");
+        //        string a = Console.ReadLine();
+        //        isNumber = double.TryParse(a, out double number);
+        //        if (isNumber)
+        //        {
+        //            payment = number;
+        //        }
+        //        else
+        //        {
+        //            Console.WriteLine("не удалось распознать число, попробуйте еще раз");
+        //        }
+        //    } while (!isNumber);
+
+        //    do
+        //    {
+        //        Console.WriteLine("Введите порядковый номер платежа: ");
+        //        string a = Console.ReadLine();
+        //        isNumber = double.TryParse(a, out double number);
+        //        if (isNumber)
+        //        {
+        //            paymentNumber = number;
+        //        }
+        //        else
+        //        {
+        //            Console.WriteLine("не удалось распознать число, попробуйте еще раз");
+        //        }
+        //    } while (!isNumber);
+
+        //    string result = InfoCredit(payment, paymentNumber);
+            
+        //    Console.WriteLine(result);
+
+        //    Console.ReadKey();
+        //}
+
+        
+    }
 }
 
