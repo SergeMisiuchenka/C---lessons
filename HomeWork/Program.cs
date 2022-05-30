@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace HomeWork
 {
     class Program
@@ -845,13 +844,142 @@ namespace HomeWork
         //    } while (!isNumber);
 
         //    string result = InfoCredit(payment, paymentNumber);
-            
+
         //    Console.WriteLine(result);
 
         //    Console.ReadKey();
         //}
 
-        
+        //                                  9 Урок
+
+        // 1 задание
+        //Создайте массив размерностью в 10 элементов, выведите на экран все элементы массива в обратном порядке. 
+        //static void Main()
+        //{
+        //    int[] mass = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+        //    Console.WriteLine(mass[0]);
+        //    Console.WriteLine(mass[1]);
+        //    Console.WriteLine(mass[2]);
+        //    Console.WriteLine(mass[3]);
+        //    Console.WriteLine(mass[4]);
+        //    Console.WriteLine(mass[5]);
+        //    Console.WriteLine(mass[6]);
+        //    Console.WriteLine(mass[7]);
+        //    Console.WriteLine(mass[8]);
+        //    Console.WriteLine(mass[9]);
+
+        //    Console.ReadKey();
+        //}
+
+        // 2 задание
+        //Создать массив размера N элементов, заполнить его произвольными целыми значениями (размер массива задает пользователь).Вывести на экран:
+        //наибольшее значение массива, наименьшее значение массива, общую сумму всех элементов, среднее арифметическое всех элементов,
+        //вывести все нечетные значения.
+
+        //static void Main ()
+        //{
+        //    Console.WriteLine("Введите размер массива: ");
+        //    string a = Console.ReadLine();
+        //    int amount = int.Parse(a);
+        //    int[] oddArray = new int[amount];
+        //    int[] array = ArrayHelper.CreateArrayRandom(amount);
+        //    ArrayHelper.PrintArray(array);
+        //    double summ;
+        //    int summGeneral;
+        //    int maxValue;
+        //    int minValue;
+        //    maxValue = ArrayHelper.FindMaxValue(array);
+        //    minValue = ArrayHelper.FindMinValue(array);
+        //    summGeneral = ArrayHelper.FindGeneralSumm(array);
+        //    summ = ArrayHelper.FindSumm(array);
+        //    Console.Write("Нечетные числа: ");
+        //    for (int i = 0; i < array.Length; i++)
+        //    {
+        //        if (array[i] % 2 != 0)
+        //        {
+        //            oddArray[i] = array[i];
+        //            Console.Write(oddArray[i]);
+        //            if (i < array.Length - 1)
+        //            {
+        //                Console.Write(",");
+        //            }
+        //        }
+
+        //    }
+        //    Console.WriteLine();
+        //    Console.WriteLine("Наибольшее значение массива равно: " + maxValue);
+        //    Console.WriteLine("Наименьшее значение массива равно: " + minValue);
+        //    Console.WriteLine("Общая сумма всех элементов равна: " + summGeneral);
+        //    Console.WriteLine("Среднее арифметическое всех элементов равно: " + summ);
+        //}
+
+        //3 Задание
+
+        //1) Создать метод MyReverse(int[] array), который принимает в качестве аргумента массив целочисленных элементов и возвращает
+        //    инвертированный массив(элементы массива в обратном порядке).  
+        //2) Создайте метод int[] SubArray(int[] array, int index, int count). Метод возвращает часть полученного в качестве аргумента массива,
+        //    начиная с позиции указанной в аргументе index, размерностью, которая соответствует значению аргумента count.
+        //    Если аргумент count содержит значение больше чем количество элементов, которые входят в выбираемую часть исходного массива 
+        //        (от указанного индекса index, до индекса последнего элемента), то при формировании нового массива размерностью в count, 
+        //    заполните единицами те элементы, которые не были скопированы из исходного массива.
+
+        //static void Main()
+        //{
+        //    Console.WriteLine("Введите размер массива: ");
+        //    string a = Console.ReadLine();
+        //    int amount = int.Parse(a);
+
+        //    int[] array = ArrayHelper.CreateArrayRandom(amount);
+        //    ArrayHelper.PrintArray(array);
+        //    Console.WriteLine();
+
+        //    int[] reverse = new int[array.Length];
+
+        //    reverse = ArrayHelper.MyReverse(array);
+        //    Console.WriteLine("Инвертированный массив: ");
+        //    ArrayHelper.PrintArray(reverse);
+        //    Console.WriteLine();
+
+        //    reverse = ArrayHelper.SubArray(array, 3, 20);
+        //    ArrayHelper.PrintArray(reverse);
+        //}
+
+        //4 Задание
+
+        //Создать метод, который будет выполнять увеличение длины массива переданного в качестве аргумента, на 1 элемент.Элементы массива,
+        //должны сохранить свое значение и порядок индексов. Создайте метод, который принимает два аргумента, первый аргумент - 
+        //типа int[] array, второй аргумент - типа int value. В теле метода реализуйте возможность добавления второго аргумента метода в 
+        //массив по индексу – 0, при этом длина нового массива, должна увеличиться на 1 элемент, а элементы получаемого массива в качестве 
+        //первого аргумента должны скопироваться в новый массив начиная с индекса - 1. 
+
+        static void Main()
+        {
+            Console.WriteLine("Введите размер массива: ");
+            string a = Console.ReadLine();
+            int amount = int.Parse(a);
+
+            int[] array = ArrayHelper.CreateArrayRandom(amount);
+            ArrayHelper.PrintArray(array);
+            Console.WriteLine();
+
+            int[] arraya = new int[array.Length];
+            arraya = ArrayHelper.ArrayLengthPlus(array);
+            ArrayHelper.PrintArray(arraya);
+
+            Console.WriteLine("Введите второй аргумент: ");
+            string b = Console.ReadLine();
+            int value = int.Parse(b);
+            
+            int[] arrayNew = new int[array.Length];
+            arrayNew = ArrayHelper.ArrayChange(array, value);
+            ArrayHelper.PrintArray(arrayNew);
+
+            
+
+           
+
+        }
     }
 }
 
